@@ -1,6 +1,7 @@
 ⟨
   Xgcd,
   Gcd,
+  Lcm,
   Crt,
   ModInverse,
   ZCross,
@@ -18,6 +19,10 @@ Xgcd ← {
 Gcd ← {
   0 ⊑ 𝕨 Xgcd 𝕩
 }⚇0
+
+Lcm ← {
+  (| 𝕩 × 𝕨) ÷ 𝕩 Gcd 𝕨
+}
 
 # Input: ⟨a, m_1⟩ Crt ⟨b, m_2⟩
 Crt ← {

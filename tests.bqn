@@ -3,6 +3,7 @@ mod ← •Import "mod.bqn"
 Xgcd ← mod.Xgcd
 ModInverse ← mod.ModInverse
 ZCross ← mod.ZCross
+Lcm ← mod.Lcm
 
 ! (1 Xgcd 5) ≡ ⟨1, 1, 0⟩
 ! (2 Xgcd 5) ≡ ⟨1, -2, 1⟩
@@ -13,6 +14,11 @@ ZCross ← mod.ZCross
 
 ! (100 Xgcd 100) ≡ ⟨100, 1, 0⟩
 ! (23 Xgcd 23) ≡ ⟨23, 1, 0⟩
+
+! (2 Lcm 3) = 6
+! (3 Lcm 3) = 3
+! (90 Lcm 342) = 1710
+
 
 size ← 40
 identityMatrix ← =⌜˜↕size
